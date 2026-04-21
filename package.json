@@ -2,10 +2,10 @@
   "name": "test-codex-project",
   "version": "0.1.0",
   "private": true,
-  "description": "A Tauri desktop demo project that builds into a native executable.",
+  "description": "A Tauri desktop demo project that builds into a macOS app bundle in the project root.",
   "scripts": {
     "dev": "tauri dev",
-    "build": "tauri build",
+    "build": "node scripts/build-root-app.mjs",
     "start": "npm run dev"
   },
   "devDependencies": {
