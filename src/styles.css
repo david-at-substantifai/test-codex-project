@@ -1,0 +1,157 @@
+:root {
+  color-scheme: light;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background:
+    radial-gradient(circle at top left, rgba(255, 216, 168, 0.9), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(117, 193, 255, 0.75), transparent 30%),
+    linear-gradient(135deg, #f6f3ea 0%, #fdfdfb 55%, #eef7ff 100%);
+  color: #1c2431;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-shell {
+  width: min(1040px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 4rem 0 3rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  color: #8a4b14;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 4.7rem);
+  line-height: 0.95;
+  max-width: 12ch;
+}
+
+.lede {
+  max-width: 58ch;
+  margin: 1.25rem 0 0;
+  font-size: 1.08rem;
+  color: #3d495c;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(28, 36, 49, 0.08);
+  border-radius: 22px;
+  padding: 1.4rem;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 40px rgba(73, 87, 111, 0.12);
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.facts {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+}
+
+.facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(28, 36, 49, 0.08);
+}
+
+.facts dt {
+  font-weight: 600;
+}
+
+.facts dd {
+  margin: 0;
+  color: #4f5b70;
+}
+
+.field {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+  color: #4f5b70;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+input,
+button {
+  border-radius: 999px;
+  border: 1px solid rgba(28, 36, 49, 0.12);
+  padding: 0.85rem 1rem;
+  font: inherit;
+}
+
+input {
+  flex: 1 1 220px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+button {
+  background: linear-gradient(135deg, #1e6fd9, #0f4b98);
+  color: #fff;
+  cursor: pointer;
+  min-width: 190px;
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease;
+  box-shadow: 0 12px 24px rgba(15, 75, 152, 0.22);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+.response {
+  margin: 1rem 0 0;
+  min-height: 3rem;
+  color: #243042;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding-top: 2.5rem;
+  }
+
+  .panel {
+    padding: 1.1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

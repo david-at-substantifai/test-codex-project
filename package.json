@@ -2,8 +2,13 @@
   "name": "test-codex-project",
   "version": "0.1.0",
   "private": true,
-  "description": "A tiny starter project connected to GitHub.",
+  "description": "A Tauri desktop demo project that builds into a native executable.",
   "scripts": {
-    "start": "node src/index.js"
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.1"
   }
 }
