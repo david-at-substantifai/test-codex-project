@@ -1,0 +1,9 @@
+{
+  "name": "test-codex-project",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A tiny starter project connected to GitHub.",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
